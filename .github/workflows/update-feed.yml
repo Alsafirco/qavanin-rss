@@ -1,0 +1,36 @@
+name: Update Qavanin RSS
+
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "qavanin_rss.py"
+      - ".github/workflows/update-feed.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Generate RSS
+        run: python qavanin_rss.py
+      - name: Commit updated feed
+        run: |
+          if git diff --quiet -- feed.xml; then
+            echo "Feed has not changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.xml
+          git commit -m "Update RSS feed"
+          git push
