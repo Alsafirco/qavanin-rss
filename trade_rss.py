@@ -14,10 +14,11 @@ SELF = "https://raw.githubusercontent.com/Alsafirco/qavanin-rss/main/trade-feed.
 KEYWORDS = [
     "گمرک", "صادرات", "واردات", "ترخیص", "تعرفه", "حقوق ورودی", "کد تعرفه",
     "ثبت سفارش", "تجارت خارجی", "بازرگانی", "کالای اساسی", "کارت بازرگانی",
-    "مناطق آزاد", "ترانزیت", "مرز تجاری", "بندر", "کشتیرانی", "حمل و نقل",
-    "حمل‌ونقل", "واردکننده", "صادرکننده", "مقررات صادرات", "مقررات واردات",
-    "سازمان توسعه تجارت", "گمرک جمهوری اسلامی", "سامانه جامع تجارت",
-    "trade", "customs", "export", "import", "tariff", "clearance"
+    "مناطق آزاد", "مرز تجاری", "واردکننده", "صادرکننده", "مقررات صادرات", "مقررات واردات",
+    "سازمان توسعه تجارت", "گمرک جمهوری اسلامی", "سامانه جامع تجارت", "بخشنامه گمرکی",
+    "بندر تجاری", "ترانزیت کالا", "حمل‌ونقل بین‌المللی", "حمل و نقل بین‌المللی",
+    "کشتیرانی تجاری", "کالاهای وارداتی", "کالاهای صادراتی",
+    "trade", "customs", "export", "import", "tariff", "clearance", "freight", "cargo"
 ]
 SOURCES = [
     ("ایرنا - اقتصاد", "https://www.irna.ir/rss/tp/20"),
@@ -121,7 +122,8 @@ def main():
             unique[key] = item
     ordered = sorted(unique.values(), key=lambda x: x["date"], reverse=True)[:150]
 
-    rss = ET.Element("rss", version="2.0", attrib={"xmlns:atom": "http://www.w3.org/2005/Atom"})
+    ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
+    rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = "RSS یکپارچه گمرک، صادرات و واردات ایران"
     ET.SubElement(channel, "link").text = "https://github.com/Alsafirco/qavanin-rss"
