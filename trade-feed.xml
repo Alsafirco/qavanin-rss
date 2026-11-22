@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RSS یکپارچه گمرک، صادرات و واردات ایران</title>
+    <link>https://github.com/Alsafirco/qavanin-rss</link>
+    <description>خوراک یکپارچه اخبار گمرک، بخشنامه‌ها، صادرات، واردات، تعرفه‌ها، ترخیص و تجارت خارجی ایران. این فایل با GitHub Actions به‌روزرسانی می‌شود.</description>
+    <language>fa</language>
+    <atom:link href="https://raw.githubusercontent.com/Alsafirco/qavanin-rss/main/trade-feed.xml" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>
