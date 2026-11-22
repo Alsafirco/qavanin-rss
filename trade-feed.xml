@@ -1,28 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>RSS یکپارچه گمرک، صادرات و واردات ایران</title>
     <link>https://github.com/Alsafirco/qavanin-rss</link>
     <description>تجمیع اخبار مرتبط با گمرک، بخشنامه‌ها، صادرات، واردات، تعرفه‌ها، ترخیص، تجارت خارجی و لجستیک ایران</description>
     <language>fa</language>
-    <lastBuildDate>Sun, 22 Nov 2026 19:50:25 +0000</lastBuildDate>
-    <ns0:link href="https://raw.githubusercontent.com/Alsafirco/qavanin-rss/main/trade-feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>انفجار ناو جنگی روسیه در بندر بنغازی لیبی + فیلم</title>
-      <link>https://www.khabaronline.ir/news/2305717/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%86%D8%A7%D9%88-%D8%AC%D9%86%DA%AF%DB%8C-%D8%B1%D9%88%D8%B3%DB%8C%D9%87-%D8%AF%D8%B1-%D8%A8%D9%86%D8%AF%D8%B1-%D8%A8%D9%86%D8%BA%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D8%A8%DB%8C-%D9%81%DB%8C%D9%84%D9%85</link>
-      <guid isPermaLink="false">https://www.khabaronline.ir/news/2305717/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%86%D8%A7%D9%88-%D8%AC%D9%86%DA%AF%DB%8C-%D8%B1%D9%88%D8%B3%DB%8C%D9%87-%D8%AF%D8%B1-%D8%A8%D9%86%D8%AF%D8%B1-%D8%A8%D9%86%D8%BA%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D8%A8%DB%8C-%D9%81%DB%8C%D9%84%D9%85</guid>
-      <pubDate>Sun, 22 Nov 2026 19:00:00 +0000</pubDate>
-      <category>خبرآنلاین</category>
-      <description>رسانه‌ها از وقوع انفجار در یک شناور روسی در بندر بنغازی لیبی خبر داده‌اند؛ حادثه‌ای که احتمال می‌رود در پی حمله اوکراین رخ داده باشد. این شناور احتمالاً ناو جنگی «مرکوری» روسیه به ارزش ۱۵۰ میلیون پوند است. منبع: خبرفوری</description>
-    </item>
-    <item>
-      <title>فرمانده سپاه بندرانزلی: میدان‌داری مردم تداوم تفکر بسیج است</title>
-      <link>https://www.isna.ir/news/1405090100754/%D9%81%D8%B1%D9%85%D8%A7%D9%86%D8%AF%D9%87-%D8%B3%D9%BE%D8%A7%D9%87-%D8%A8%D9%86%D8%AF%D8%B1%D8%A7%D9%86%D8%B2%D9%84%DB%8C-%D9%85%DB%8C%D8%AF%D8%A7%D9%86-%D8%AF%D8%A7%D8%B1%DB%8C-%D9%85%D8%B1%D8%AF%D9%85-%D8%AA%D8%AF%D8%A7%D9%88%D9%85-%D8%AA%D9%81%DA%A9%D8%B1-%D8%A8%D8%B3%DB%8C%D8%AC-%D8%A7%D8%B3%D8%AA</link>
-      <guid isPermaLink="false">https://www.isna.ir/news/1405090100754/%D9%81%D8%B1%D9%85%D8%A7%D9%86%D8%AF%D9%87-%D8%B3%D9%BE%D8%A7%D9%87-%D8%A8%D9%86%D8%AF%D8%B1%D8%A7%D9%86%D8%B2%D9%84%DB%8C-%D9%85%DB%8C%D8%AF%D8%A7%D9%86-%D8%AF%D8%A7%D8%B1%DB%8C-%D9%85%D8%B1%D8%AF%D9%85-%D8%AA%D8%AF%D8%A7%D9%88%D9%85-%D8%AA%D9%81%DA%A9%D8%B1-%D8%A8%D8%B3%DB%8C%D8%AC-%D8%A7%D8%B3%D8%AA</guid>
-      <pubDate>Sun, 22 Nov 2026 18:56:23 +0000</pubDate>
-      <category>ایسنا</category>
-      <description>فرمانده سپاه ناحیه بندرانزلی با اشاره به نقش‌آفرینی مردم در کنار نیروهای مسلح طی جنگ‌هایی که بر ملت ایران تحمیل شده، گفت: همان‌گونه که امام خمینی(ره) در دوران دفاع مقدس و در شرایط تهدید آمریکا، بسیج را تأسیس کردند، امروز نیز در جنگ تمام‌عیار با آمریکا و رژیم صهیونیستی، ملت جان‌فدای ایران در میدان حضور دارند و این شکل جدیدی از بسیج ملت است که میدان‌داری می‌کند.</description>
-    </item>
+    <lastBuildDate>Sun, 22 Nov 2026 19:51:06 +0000</lastBuildDate>
+    <atom:link href="https://raw.githubusercontent.com/Alsafirco/qavanin-rss/main/trade-feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ترخیص کالا - سامانه مدیریت کالا و خدمات پس از ترخیص</title>
       <link>https://news.google.com/rss/articles/CBMiOEFVX3lxTE1BandfYjd0MDV5TWU5UV95NGxtcndmWnJQREFVSkxPV2pxTjRlV1FfNHhwM0NWYnVl?oc=5</link>
@@ -38,14 +22,6 @@
       <pubDate>Sun, 22 Nov 2026 18:44:04 +0000</pubDate>
       <category>ایسنا</category>
       <description>مدیرکل استاندارد استان همدان با تأکید بر نقش رعایت استانداردها در حفظ کیفیت محصولات و اعتبار بازارهای صادراتی گفت: ورود محصولات بی‌کیفیت به بازارهای صادراتی در برخی حوزه‌ها، به اعتبار تولیدات ایران آسیب زد و موجب از دست رفتن بخشی از بازار صادراتی محصولات لالجین شد.</description>
-    </item>
-    <item>
-      <title>بازسازی پایانه مسافری شهید حقگوی بوشهر به مراحل پایانی رسید</title>
-      <link>https://www.isna.ir/news/1405090100740/%D8%A8%D8%A7%D8%B2%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%D9%87-%D9%85%D8%B3%D8%A7%D9%81%D8%B1%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AD%D9%82%DA%AF%D9%88%DB%8C-%D8%A8%D9%88%D8%B4%D9%87%D8%B1-%D8%A8%D9%87-%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%DB%8C-%D8%B1%D8%B3%DB%8C%D8%AF</link>
-      <guid isPermaLink="false">https://www.isna.ir/news/1405090100740/%D8%A8%D8%A7%D8%B2%D8%B3%D8%A7%D8%B2%DB%8C-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%D9%87-%D9%85%D8%B3%D8%A7%D9%81%D8%B1%DB%8C-%D8%B4%D9%87%DB%8C%D8%AF-%D8%AD%D9%82%DA%AF%D9%88%DB%8C-%D8%A8%D9%88%D8%B4%D9%87%D8%B1-%D8%A8%D9%87-%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%DB%8C-%D8%B1%D8%B3%DB%8C%D8%AF</guid>
-      <pubDate>Sun, 22 Nov 2026 18:30:42 +0000</pubDate>
-      <category>ایسنا</category>
-      <description>معاون فنی و مهندسی اداره‌کل بنادر و دریانوردی استان بوشهر از پیشرفت عملیات بازسازی «پایانه بین‌المللی دریایی شهید حقگو» خبر داد و گفت: سالن ترانزیت این پایانه در آستانه تکمیل عملیات بازسازی قرار دارد.</description>
     </item>
     <item>
       <title>صادرات بی‌برنامه، عامل گرانی پیاز و گوجه‌فرنگی/قیمت گوجه‌فرنگی در میدان بار به ۸۰ هزار تومان رسید</title>
@@ -80,36 +56,12 @@
       <description>پردیس -ایرنا- مسئول انجمن حجاب و پوشاک اسلامی کشور با اشاره به وضعیت فروشگاه‌ها و تولیدکنندگان پوشاک ایرانی‌اسلامی در سطح کشور گفت: گرانی پارچه و مواد اولیه، سختی واردات، عدم تخصیص دلار دولتی به پارچه و فشار اجاره فضا، تولیدکنندگان را در مضیقه قرار داده و امیدواریم دولت با تدبیر از این بخش حمایت کند.</description>
     </item>
     <item>
-      <title>انفجار یک کشتی روسی در بندر بنغازی لیبی</title>
-      <link>https://www.asriran.com/fa/news/1208076/انفجار-یک-کشتی-روسی-در-بندر-بنغازی-لیبی</link>
-      <guid isPermaLink="false">https://www.asriran.com/fa/news/1208076/انفجار-یک-کشتی-روسی-در-بندر-بنغازی-لیبی</guid>
-      <pubDate>Sun, 22 Nov 2026 14:31:38 +0000</pubDate>
-      <category>عصر ایران</category>
-      <description>دولت مستقر در شرق لیبی امروز (یکشنبه) اعلام کرد که بررسی‌های اولیه نشان‌دهنده وقوع انفجار در یک کشتی روسی در بندر بنغازی است و احتمالا این حادثه ناشی از حمله پهپادی بوده است.</description>
-    </item>
-    <item>
       <title>ضرورت تمرکززدایی از خدمات سند گمرکی با مشارکت اتاق‌های بازرگانی استانی</title>
       <link>https://www.irna.ir/news/86329411/%D8%B6%D8%B1%D9%88%D8%B1%D8%AA-%D8%AA%D9%85%D8%B1%DA%A9%D8%B2%D8%B2%D8%AF%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B2-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B3%D9%86%D8%AF-%DA%AF%D9%85%D8%B1%DA%A9%DB%8C-%D8%A8%D8%A7-%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%D8%A7%D8%AA%D8%A7%D9%82-%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%D8%B1%DA%AF%D8%A7%D9%86%DB%8C</link>
       <guid isPermaLink="false">https://www.irna.ir/news/86329411/%D8%B6%D8%B1%D9%88%D8%B1%D8%AA-%D8%AA%D9%85%D8%B1%DA%A9%D8%B2%D8%B2%D8%AF%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B2-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B3%D9%86%D8%AF-%DA%AF%D9%85%D8%B1%DA%A9%DB%8C-%D8%A8%D8%A7-%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%D8%A7%D8%AA%D8%A7%D9%82-%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%D8%B1%DA%AF%D8%A7%D9%86%DB%8C</guid>
       <pubDate>Sun, 22 Nov 2026 13:33:03 +0000</pubDate>
       <category>ایرنا - اقتصاد</category>
       <description>تهران- ایرنا- دبیرکل اتاق بازرگانی، صنایع، معادن و کشاورزی تهران با اشاره به گلایه‌های تشکل‌ها و شرکت‌های استفاده‌کننده از خدمات کارنه تیر (سند گمرکی برای ترانزیت بین‌المللی کالا ) گفت: مزایای واگذاری بخشی از امور اجرایی کارنه‌تیر به اتاق‌های استانی، راهکاری برای تمرکززدایی، تسهیل دسترسی شرکت‌های حمل‌ونقل بین‌المللی و افزایش سرعت ارائه خدمات به فعالان اقتصادی است.</description>
-    </item>
-    <item>
-      <title>استانداری هرمزگان: صدای انفجار شنیده شده در بندرعباس مربوط به امحای مهمات عمل‌نکرده است</title>
-      <link>https://www.asriran.com/fa/news/1208062/استانداری-هرمزگان-صدای-انفجار-شنیده-شده-در-بندرعباس-مربوط-به-امحای-مهمات-عمل-نکرده-است</link>
-      <guid isPermaLink="false">https://www.asriran.com/fa/news/1208062/استانداری-هرمزگان-صدای-انفجار-شنیده-شده-در-بندرعباس-مربوط-به-امحای-مهمات-عمل-نکرده-است</guid>
-      <pubDate>Sun, 22 Nov 2026 13:28:38 +0000</pubDate>
-      <category>عصر ایران</category>
-      <description>پیش تر فرماندهی پدافند هوایی جنوب شرق کشور، مستقر در بندرعباس در اطلاعیه‌ای از انجام عملیات امحای مهمات عمل‌ نکرده دشمن در محدوده شرق بندرعباس به مدت یک هفته تا ۴ آذرماه ۱۴۰۵ خبر داده بود.</description>
-    </item>
-    <item>
-      <title>نوسازی ناوگان جاده‌ای؛ راهکاری برای کاهش مصرف سوخت و ناترازی انرژی</title>
-      <link>https://www.irna.ir/news/86329421/%D9%86%D9%88%D8%B3%D8%A7%D8%B2%DB%8C-%D9%86%D8%A7%D9%88%DA%AF%D8%A7%D9%86-%D8%AC%D8%A7%D8%AF%D9%87-%D8%A7%DB%8C-%D8%B1%D8%A7%D9%87%DA%A9%D8%A7%D8%B1%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D8%A7%D9%87%D8%B4-%D9%85%D8%B5%D8%B1%D9%81-%D8%B3%D9%88%D8%AE%D8%AA-%D9%88-%D9%86%D8%A7%D8%AA%D8%B1%D8%A7%D8%B2%DB%8C</link>
-      <guid isPermaLink="false">https://www.irna.ir/news/86329421/%D9%86%D9%88%D8%B3%D8%A7%D8%B2%DB%8C-%D9%86%D8%A7%D9%88%DA%AF%D8%A7%D9%86-%D8%AC%D8%A7%D8%AF%D9%87-%D8%A7%DB%8C-%D8%B1%D8%A7%D9%87%DA%A9%D8%A7%D8%B1%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%DA%A9%D8%A7%D9%87%D8%B4-%D9%85%D8%B5%D8%B1%D9%81-%D8%B3%D9%88%D8%AE%D8%AA-%D9%88-%D9%86%D8%A7%D8%AA%D8%B1%D8%A7%D8%B2%DB%8C</guid>
-      <pubDate>Sun, 22 Nov 2026 13:10:53 +0000</pubDate>
-      <category>ایرنا - اقتصاد</category>
-      <description>تهران - ایرنا - کمیسیون زیربنایی و تولیدی دبیرخانه مجمع تشخیص مصلحت نظام، در نشستی با حضور نمایندگان دستگاه‌های اجرایی، ابعاد و راهکارهای نوسازی ناوگان حمل‌ونقل جاده‌ای را با هدف کاهش مصرف سوخت، افزایش بهره‌وری و رفع ناترازی انرژی بررسی کرد.</description>
     </item>
     <item>
       <title>احتمال افت ۳۰ درصدی تولیدات کشاورزی در صورت تامین نشدن سموم و کود</title>
@@ -126,22 +78,6 @@
       <pubDate>Sun, 22 Nov 2026 13:09:02 +0000</pubDate>
       <category>عصر ایران</category>
       <description>برخلاف گمانه‌زنی‌های اولیه درباره ارتباط خروج دهقان‌دهنوی از سازمان توسعه تجارت با حکم انفصال، بررسی‌های فارس نشان داد او پیش از صدور این حکم استعفا داده بود و محکومیت اولیه نیز در مرحله تجدیدنظر نقض شد.</description>
-    </item>
-    <item>
-      <title>هزینه‌های زندگی در تهران؛ جوانان شاغل میان اجاره و اقساط گرفتارند</title>
-      <link>https://www.asriran.com/fa/news/1208052/هزینه-های-زندگی-در-تهران-جوانان-شاغل-میان-اجاره-و-اقساط-گرفتارند</link>
-      <guid isPermaLink="false">https://www.asriran.com/fa/news/1208052/هزینه-های-زندگی-در-تهران-جوانان-شاغل-میان-اجاره-و-اقساط-گرفتارند</guid>
-      <pubDate>Sun, 22 Nov 2026 13:07:21 +0000</pubDate>
-      <category>عصر ایران</category>
-      <description>افزایش هزینه مسکن، خوراک و حمل‌ونقل، زندگی مستقل را برای بسیاری از جوانان شاغل در تهران دشوار کرده است. گزارش میدانی از وضعیت آبان ۱۴۰۵ نشان می‌دهد حتی درآمدهای ماهانه ۳۰ تا ۴۰ میلیون تومانی نیز در برابر مخارج پایتخت پاسخ‌گو نیستند.</description>
-    </item>
-    <item>
-      <title>ترند: ایران با توسعه همکاری‌های منطقه‌ای، جایگاه خود را در معادلات قفقاز تقویت می‌کند</title>
-      <link>https://www.irna.ir/news/86329208/%D8%AA%D8%B1%D9%86%D8%AF-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C-%D9%87%D8%A7%DB%8C-%D9%85%D9%86%D8%B7%D9%82%D9%87-%D8%A7%DB%8C-%D8%AC%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AE%D9%88%D8%AF-%D8%B1%D8%A7-%D8%AF%D8%B1-%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA</link>
-      <guid isPermaLink="false">https://www.irna.ir/news/86329208/%D8%AA%D8%B1%D9%86%D8%AF-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C-%D9%87%D8%A7%DB%8C-%D9%85%D9%86%D8%B7%D9%82%D9%87-%D8%A7%DB%8C-%D8%AC%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AE%D9%88%D8%AF-%D8%B1%D8%A7-%D8%AF%D8%B1-%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D8%AA</guid>
-      <pubDate>Sun, 22 Nov 2026 11:38:04 +0000</pubDate>
-      <category>ایرنا - اقتصاد</category>
-      <description>تهران- ایرنا- خبرگزاری ترند با بررسی تحولات ژئوپلیتیکی قفقاز جنوبی و گسترش همکاری‌های تهران و ایروان، توسعه مناسبات ایران و ارمنستان در حوزه‌های ارتباطات، فناوری، امنیت سایبری و ترانزیت را گامی در راستای تقویت حضور منطقه‌ای ایران و افزایش ظرفیت‌های این کشور برای نقش‌آفرینی در معادلات جدید قفقاز ارزیابی کرد.</description>
     </item>
     <item>
       <title>- سامانه مدیریت کالا و خدمات پس از ترخیص</title>
