@@ -5,7 +5,7 @@
     <link>https://github.com/Alsafirco/qavanin-rss</link>
     <description>تجمیع اخبار مرتبط با گمرک، بخشنامه‌ها، صادرات، واردات، تعرفه‌ها، ترخیص، تجارت خارجی و لجستیک ایران</description>
     <language>fa</language>
-    <lastBuildDate>Sun, 22 Nov 2026 20:36:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 20:38:06 +0000</lastBuildDate>
     <atom:link href="https://raw.githubusercontent.com/Alsafirco/qavanin-rss/main/trade-feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>واردات</title>
