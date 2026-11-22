@@ -33,6 +33,7 @@ TELEGRAM_CHANNELS = [
     ("تلگرام - کنفدراسیون صادرات ایران", "iranexpconfederation"),
     ("تلگرام - گمرک و بازرگانی", "customs_commercial"),
     ("تلگرام - مرکز اخبار گمرکی", "CustomsNewsCenteral"),
+    ("تلگرام - سفیر تست", "safirtest1"),
 ]
 
 SOURCES = [
