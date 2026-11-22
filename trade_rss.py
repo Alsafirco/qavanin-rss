@@ -20,6 +20,15 @@ KEYWORDS = [
     "کشتیرانی تجاری", "کالاهای وارداتی", "کالاهای صادراتی",
     "trade", "customs", "export", "import", "tariff", "clearance", "freight", "cargo"
 ]
+TELEGRAM_CHANNELS = [
+    ("تلگرام - اتحادیه ملی کارگزاران گمرکی", "UnionofCustomsBrokers"),
+    ("تلگرام - آخرین بخشنامه‌های بازرگانی و گمرکی", "yaldaregisterservices"),
+    ("تلگرام - بخشنامه‌های جدید بازرگانی و گمرکی", "nashreghanoon"),
+    ("تلگرام - مجله واردات و صادرات", "Import_Export"),
+    ("تلگرام - راهکار تجارت پایا", "Rahkar_tejarat"),
+    ("تلگرام - ایران ایمپکس", "iranimpex"),
+]
+
 SOURCES = [
     ("ایرنا - اقتصاد", "https://www.irna.ir/rss/tp/20"),
     ("مهر - اقتصاد", "https://www.mehrnews.com/rss/tp/25"),
@@ -104,6 +113,48 @@ def read_source(label, url):
                 })
     return found
 
+
+def read_telegram_channel(label, username):
+    """Read recent public posts from Telegram's t.me/s/<channel> preview."""
+    url = f"https://t.me/s/{username}"
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; IranTradeRSS/1.0)"})
+    with urlopen(req, timeout=25) as response:
+        html = response.read().decode("utf-8", errors="replace")
+
+    found = []
+    # Telegram public previews wrap each post in a widget_message_wrap block.
+    chunks = re.split(r'<div class="tgme_widget_message_wrap', html)
+    for chunk in chunks[1:]:
+        post_match = re.search(r'data-post="([^"]+)"', chunk)
+        if not post_match:
+            continue
+        post_path = post_match.group(1)
+        if "/" not in post_path:
+            continue
+        message_id = post_path.rsplit("/", 1)[-1]
+        date_match = re.search(r'<time[^>]*datetime="([^"]+)"', chunk)
+        text_match = re.search(
+            r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>',
+            chunk, re.S
+        )
+        if not text_match:
+            continue
+        message_html = text_match.group(1)
+        desc = clean(message_html)
+        if not desc:
+            continue
+        haystack = desc.lower()
+        if not any(k.lower() in haystack for k in KEYWORDS):
+            continue
+        title = desc if len(desc) <= 180 else desc[:177].rsplit(" ", 1)[0] + "..."
+        date_raw = date_match.group(1) if date_match else ""
+        link = f"https://t.me/{post_path}"
+        found.append({
+            "title": title, "link": link, "description": desc[:1200],
+            "guid": link, "date": parse_date(date_raw), "source": label
+        })
+    return found
+
 def main():
     items, failed = [], []
     for label, url in SOURCES:
@@ -111,6 +162,15 @@ def main():
             batch = read_source(label, url)
             items.extend(batch)
             print(f"{label}: {len(batch)} matching items")
+        except Exception as exc:
+            failed.append((label, str(exc)))
+            print(f"WARN {label}: {exc}")
+
+    for label, username in TELEGRAM_CHANNELS:
+        try:
+            batch = read_telegram_channel(label, username)
+            items.extend(batch)
+            print(f"{label}: {len(batch)} matching posts")
         except Exception as exc:
             failed.append((label, str(exc)))
             print(f"WARN {label}: {exc}")
