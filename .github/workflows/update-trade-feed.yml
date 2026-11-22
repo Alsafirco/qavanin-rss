@@ -14,6 +14,7 @@ on:
 permissions:
   contents: write
 
+# Keep RSS updates sequential so two scheduled/manual runs cannot push together.
 concurrency:
   group: iran-trade-rss
   cancel-in-progress: false
@@ -25,20 +26,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
       - name: Build merged RSS
         run: python trade_rss.py
-      - name: Commit updated feed
+      - name: Commit and push updated feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add trade-feed.xml
-          if ! git diff --cached --quiet; then
-            git commit -m "Update unified Iran trade RSS"
-            git push
-          else
+          if git diff --cached --quiet; then
             echo "Feed is unchanged."
+            exit 0
           fi
+
+          git commit -m "Update unified Iran trade RSS"
+
+          # A human commit can still arrive while the feed is being built.
+          # Rebase and retry instead of failing on a non-fast-forward push.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Rebase conflict; rebuilding feed on top of latest main."
+              git rebase --abort
+              git reset --hard origin/main
+              python trade_rss.py
+              git add trade-feed.xml
+              if git diff --cached --quiet; then
+                echo "Feed is unchanged after syncing."
+                exit 0
+              fi
+              git commit -m "Update unified Iran trade RSS"
+            fi
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 2
+          done
+
+          echo "Unable to push RSS update after 5 attempts."
+          exit 1
