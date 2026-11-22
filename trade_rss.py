@@ -27,6 +27,12 @@ TELEGRAM_CHANNELS = [
     ("تلگرام - مجله واردات و صادرات", "Import_Export"),
     ("تلگرام - راهکار تجارت پایا", "Rahkar_tejarat"),
     ("تلگرام - ایران ایمپکس", "iranimpex"),
+    ("تلگرام - اطلاعات کسب‌وکار آنلاین", "Onlinebusinessinformationkhr"),
+    ("تلگرام - اخبار گمرک", "Gomrok_news"),
+    ("تلگرام - ترخیص‌کاران", "Tarkhis_Karan"),
+    ("تلگرام - کنفدراسیون صادرات ایران", "iranexpconfederation"),
+    ("تلگرام - گمرک و بازرگانی", "customs_commercial"),
+    ("تلگرام - مرکز اخبار گمرکی", "CustomsNewsCenteral"),
 ]
 
 SOURCES = [
