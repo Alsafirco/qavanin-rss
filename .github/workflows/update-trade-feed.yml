@@ -9,7 +9,8 @@ on:
       - 'trade-feed.xml'
       - '.github/workflows/update-trade-feed.yml'
   schedule:
-    - cron: '*/30 * * * *'
+    # GitHub Actions scheduled workflows have a 5-minute minimum interval.
+    - cron: '*/5 * * * *'
 
 permissions:
   contents: write
