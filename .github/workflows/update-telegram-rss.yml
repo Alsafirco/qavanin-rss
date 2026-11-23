@@ -24,12 +24,12 @@ jobs:
         run: python scripts/build_telegram_rss.py
       - name: Commit updated feed
         run: |
-          if git diff --quiet -- telegram-feed.xml; then
+          if git diff --quiet -- telegram-feed.xml yalda-register-services.xml; then
             echo "Feed unchanged."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add telegram-feed.xml
+          git add telegram-feed.xml yalda-register-services.xml
           git commit -m "Update combined Telegram RSS"
           git push
