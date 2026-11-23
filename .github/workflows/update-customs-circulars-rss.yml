@@ -1,0 +1,54 @@
+name: Update Customs Circulars RSS
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: customs-circulars-rss
+  cancel-in-progress: false
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Generate RSS
+        run: python scripts/build_customs_circulars_rss.py
+
+      - name: Commit and push feed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git pull --rebase origin main
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -- customs_circulars.xml
+            if ! git diff --cached --quiet; then
+              git commit -m "Update customs circulars RSS"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            else
+              echo "No RSS changes to commit."
+            fi
+          else
+            echo "Working tree clean."
+          fi
